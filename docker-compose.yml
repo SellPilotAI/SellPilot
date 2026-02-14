@@ -77,7 +77,6 @@ services:
     environment:
       SECRET_KEY: dev-secret-key
       DJANGO_ENV: development
-      DJANGO_ENV: development
       DB_HOST: postgres
       DB_NAME: sellpilot
       DB_USER: postgres
@@ -96,7 +95,6 @@ services:
       - ./backend:/app
     environment:
       SECRET_KEY: dev-secret-key
-      DJANGO_ENV: development
       DJANGO_ENV: development
       DB_HOST: postgres
       DB_NAME: sellpilot
