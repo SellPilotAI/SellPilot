@@ -1,0 +1,58 @@
+# Environment
+.env
+.env.local
+.env.*.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Django
+*.log
+local_settings.py
+staticfiles/
+media/
+
+# Node
+node_modules/
+.next/
+out/
+npm-debug.log*
+.npm
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Misc
+*.sql
+backup_*.sql
