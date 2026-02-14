@@ -2196,14 +2196,17 @@ You cannot:
 
 ## Contact
 
-**Project Maintainer:** [Your Name]  
-**Email:** your.email@example.com  
-**GitHub:** [@yourusername](https://github.com/yourusername)  
+**Project Maintainer:** Swapneel Purohit 
+
+**Email:** rsnikupurohit17@gmail.com 
+
+**GitHub:** [DEVELOPER-SWAPNEEL (https://github.com/DEVELOPER-SWAPNEEL)](https://github.com/DEVELOPER-SWAPNEEL)  
+
 **Website:** https://sellpilot.io (coming soon)
 
 **Documentation:** https://docs.sellpilot.io (coming soon)  
-**Issue Tracker:** https://github.com/yourusername/sellpilot/issues  
-**Discussions:** https://github.com/yourusername/sellpilot/discussions
+**Issue Tracker:** [https://github.com/yourusername/sellpilot/issues ](https://github.com/SellPilotAI/SellPilot/issues) 
+
 
 ---
 
@@ -2213,6 +2216,6 @@ You cannot:
 
 Built with precision and care by developers who understand ecommerce challenges.
 
-[Report Bug](https://github.com/yourusername/sellpilot/issues) · [Request Feature](https://github.com/yourusername/sellpilot/issues) · [View Roadmap](https://github.com/yourusername/sellpilot/projects)
+[Report Bug][(https://github.com/yourusername/sellpilot/issues)](https://github.com/SellPilotAI/SellPilot/issues) · [Request Feature][(https://github.com/yourusername/sellpilot/issues)](https://github.com/SellPilotAI/SellPilot/issues) · [View Roadmap][(https://github.com/yourusername/sellpilot/projects)](https://github.com/orgs/SellPilotAI/projects/2)
 
 </div>
