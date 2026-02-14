@@ -1,0 +1,46 @@
+# Phase 0–friendly: runs on docs/markdown changes only.
+# Use this so documentation-only PRs get a green check without running backend/frontend.
+
+name: Docs CI
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - "docs/**"
+      - "Docs/**"
+      - "**/*.md"
+      - ".github/workflows/docs-ci.yml"
+  pull_request:
+    branches: [main, develop]
+    paths:
+      - "docs/**"
+      - "Docs/**"
+      - "**/*.md"
+      - ".github/workflows/docs-ci.yml"
+
+jobs:
+  docs-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check docs structure
+        run: |
+          echo "Checking Phase 0 doc structure..."
+          BASE=docs
+          [ -d Docs ] && [ ! -d docs ] && BASE=Docs || true
+          for f in \
+            $BASE/architecture/system-design.md \
+            $BASE/architecture/multi-tenancy.md \
+            $BASE/database/schema.md \
+            $BASE/api/endpoints.md \
+            $BASE/development/standards.md \
+            $BASE/phases/PHASES.md; do
+            if [ -f "$f" ]; then
+              echo "  OK $f"
+            else
+              echo "  MISSING $f (optional in early Phase 0)"
+            fi
+          done
+          echo "Docs check done."
