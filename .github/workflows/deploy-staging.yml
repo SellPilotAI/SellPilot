@@ -1,0 +1,16 @@
+name: Deploy Staging
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [develop]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to staging
+        run: |
+          echo "Staging deployment placeholder. Configure in Phase 3/8."
+          echo "e.g. build Docker images, push to ECR, update ECS or EC2."

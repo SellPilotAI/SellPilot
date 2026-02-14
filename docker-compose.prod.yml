@@ -1,0 +1,21 @@
+# Production override - use with: docker-compose -f docker-compose.yml -f docker-compose.prod.yml up
+# Slimmer, no dev server; gunicorn and next start.
+
+services:
+  api:
+    command: gunicorn config.wsgi:application --bind 0.0.0.0:8000
+    profiles:
+      - prod
+
+  frontend:
+    command: npm start
+    profiles:
+      - prod
+
+  celery_worker:
+    profiles:
+      - prod
+
+  celery_beat:
+    profiles:
+      - prod
